@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEWNEW</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        body{
+        
+            font-family: arial;
+        }
+        header{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color:darkcyan ;
+            position: fixed;
+            color: white;
+        }
+        header h1{
+            font-style: italic;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+ header .input{
+    height:4rem;
+    width: 28%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header button {
+
+    background-color: white;
+    color:darkblue;
+   height:2rem ;
+    border: none;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius:3px ; 
+  padding: 5px;
+}
+    header input{
+    height:2rem;
+    width:70% ;
+    border-top-right-radius: 3px;
+  border-bottom-right-radius:3px ; 
+    border: none;
+}
+header input:focus, header button:focus{
+    outline:none;
+}
+        .lists{
+            display: flex;
+            justify-content: space-evenly;
+            list-style-type: none;
+            width: 70%;
+            
+        }
+        .list{
+            padding:15px ;
+            font-size:medium;
+            font-weight: 550;
+            cursor: pointer;
+        }
+        li:hover{
+            color:lightblue ;
+        }
+
+        .first{
+            width:100% ;
+            height: auto;
+
+        
+           
+        }
+        
+        
+        .second
+        {
+            width: 85%;
+            padding:5px ;
+        
+            margin: 0 auto;
+            border:4px solid rgb(185, 178, 178,0.1) ;
+            margin-bottom:10px ;
+        }
+        h2{
+            line-height:3rem;
+            text-align: center;
+            background-color:rgb(13, 22, 125,0.8) ;
+            color:white ;
+            font-size: 2rem;
+            width:100% ;
+           
+        }
+        .one{
+            width: 50%;
+            margin-right:10px ;
+        }
+        .two{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            margin-left:10px ;
+            font-size: small;
+        }
+        .content{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        #btn1{
+            display: block;
+            width:25% ;
+            padding:7px ;
+            background-color:blue;
+            color: white;
+            border: none;
+            border-radius:12px ;
+            font-weight: 550;
+            margin-top:10px ;
+        }
+        #btn1:hover{
+            background-color: rgb(66, 66, 212);
+
+        }
+        .third{
+            width: 85%;
+        margin: 0 auto;
+        border:4px solid rgb(185, 178, 178,0.1) ;
+        height: auto;
+        
+        }
+        .services{
+            width: 100%;
+            display: flex;
+            background-color: aliceblue;
+        }
+        .images{
+            width:33% ;
+            border: 1px solid gray;
+            margin-left: 10px;
+            padding:5px 0 ;
+            background-color: white;
+            cursor: pointer;
+        }
+        h3{
+            margin-top:5px ;
+            color:darkcyan;
+            text-align: center;
+        }
+        .fourth{
+            width: 85%;
+        margin: 0 auto;
+        border:4px solid rgb(185, 178, 178,0.1) ;
+        height: auto;
+        
+        }
+        .reviews{
+            width:100% ;
+            margin-top:8px ;
+            font-size:0.7rem;
+            font-weight: 550;
+            display: flex;
+        }
+        .review{
+            width: 33%;
+            border: 4px solid lightgrey;
+            margin-left: 5px;
+
+            padding: 15px 10px;
+        }
+        span{
+            color:black ;
+            font-size: 1.8rem;
+            font-weight: 550;
+        }
+        .fifth{
+            width: 85%;
+        margin: 0 auto;
+        border:4px solid rgb(185, 178, 178,0.1) ;
+        height: auto;
+        }
+        form{
+            width:50% ;
+            margin: 5px auto;
+          
+            font-size: small;
+            font-weight: 550;
+            padding: 20px;
+            height: auto;
+        }
+        .input-container{
+            margin-bottom: 10px;
+        }
+        .forms{
+            display: flex;
+            height: auto;
+            border: 2px solid gray;
+        }
+        input{
+            width: 100%;
+            height:2rem ;
+        }
+        textarea
+{
+    width: 100%;
+    height: 3rem;
+}        
+     footer{
+        width: 100%;
+        background-color:rgb(105, 105, 215);
+        display: flex;
+        justify-content:space-evenly;
+        align-items: center;
+        height: 25vh ;
+     } 
+     hr{
+        width: 80%;
+        height: 2px;
+        border-radius:2px ;
+
+     } 
+    
+     h4{
+        font-size:1.2rem ;
+        color: white;
+        margin-bottom: 7px;
+        cursor: pointer;
+     } 
+     h4:hover{
+        color:lightblue;
+     } 
+     .lists2{
+        
+        list-style-type: none;
+        color: azure;
+        font-size: 0.7rem;
+     }
+     .lists2:hover{
+        
+        cursor: pointer;
+     }
+     .info{
+        
+        margin-top: 15px;
+        
+     }
+     @media only screen and (max-width:600px){
+         header .input{
+            display: none;
+        }
+        header h1{
+            font-size:1.5rem ;
+        }
+     }
+    </style>
+</head>
+<body>
+    <header><h1>NEWNEW</h1>
+        <div class="input">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button><input type="text" placeholder="Search here..">
+            </div>
+        <nav>
+            <ul class="lists">
+               <a href="#home"> <li class="list">Home</li></a>
+               <a href="#about"> <li class="list">About</li></a>
+                <a href="#service"><li class="list">Services</li></a>
+               <a href="#revieww"> <li class="list">Review</li></a>
+               <a href="#contact"> <li class="list">Contact</li></a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="first" id="home">
+            <img src="https://chc.house.gov/sites/evo-subsites/chc.house.gov/files/featured_image/tech%20company.jpg" alt="image" width="100%">
+            
+            
+        
+        
+    </div>
+        <div class="second" id="about">
+            
+            <h2>About us</h2>
+            
+            <div class="content">
+                <section class="one">
+                    <img src="https://www.shutterstock.com/image-photo/empty-meeting-room-office-600nw-2173235165.jpg" alt="touristguide" width="100%" >
+                   
+                </section>
+                <section class="two">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora perspiciatis placeat harum, dignissimos, sequi unde aperiam ipsa nihil, a sapiente modi expedita optio ab. Amet est odit numquam enim sit.
+                        Nihil beatae nulla minima accusamus alias id provident, repellat obcaecati natus maiores culpa, sunt neque necessitatibus sint, exercitationem non illo. Animi quo soluta repudiandae debitis, ea minima. Exercitationem, eum veritatis.
+                        Incidunt vel minima a eos veniam, assumenda earum doloremque, ea autem beatae reprehenderit laboriosam atque inventore, corporis sint pariatur nisi repellendus debitis at aspernatur blanditiis sunt officiis. Optio, aliquid distinctio!
+                        Quod, voluptas eum expedita dolores error aliquam officiis, ea labore maiores, qui nam sit laudantium distinctio! Consequatur voluptas, similique fugiat praesentium, modi explicabo officia totam quis inventore voluptatibus omnis reiciendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad beatae delectus reiciendis nostrum adipisci eius, atque porro voluptatem reprehenderit est harum et id sed, quia aspernatur eum, repellat consequuntur pariatur.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius pariatur et laboriosam animi, quia cupiditate itaque suscipit. Ducimus nam, dolores similique molestias sapiente fugit maiores. Nihil quibusdam necessitatibus et veniam?
+                <a href="knowmore.html" target="_self"><button id="btn1">Know more</button></a></p>
+                </section>
+            </div>
+        </div>
+        <div class="third" id="service">
+            <h2>Available Services</h2>
+            <div class="services">
+                <div class="images">
+                    <a href="moreservices.html">
+                <img src="https://img.uswitch.com/n36b8lzdmgnp/6flMYPMjJ0sZzNs16Fsqa/c525a3f838b0e62716631f003390506b/shutterstock_1736005427212121212.jpg?auto=format%2Ccompress&q=35&ixlib=react-9.5.1-beta.1" alt="image3" width="100%" height="90%">
+                <h3 >Smartphones</h3>
+                    </a>
+                </div>
+                <div class="images">
+                    <a href="moreservices.html">
+                    <img src="https://m.media-amazon.com/images/I/61fOKwfxQnL._AC_SL1500_.jpg" alt="image4" width="100%" height="90%">
+                    <h3>Watches</h3>
+                    </a>
+                </div>
+               
+                <div class="images">
+                    <a href="moreservices.html">
+                    <img src="https://3.imimg.com/data3/TB/KQ/MY-238885/videocon-ha-500x500.jpg" alt="Image4" width="100%" height="90%">
+                    <h3>More Services...</h3>
+                    </a>
+                </div>
+
+
+
+            </div>
+        </div>
+        <div class="fourth" id="revieww">
+            <h2>Gossips in Market</h2>
+            <div class="reviews">
+                <div class="review">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae sit iure eius architecto cum a accusantium at voluptates. Voluptates aut animi repellendus labore nam sapiente accusamus esse distinctio recusandae quo?
+                    Minima sapiente voluptas amet blanditiis delectus nulla animi harum possimus, perspiciatis quo molestiae fugit deleniti eos optio </p>
+                    <img src="https://t4.ftcdn.net/jpg/02/24/86/95/360_F_224869519_aRaeLneqALfPNBzg0xxMZXghtvBXkfIA.jpg" alt="image5" width="20%" height="20%" style="border-radius: 40%; margin-top:18px ;">
+                    <span>Mark Brown</span>
+                </div>
+                <div class="review">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae sit iure eius architecto cum a accusantium at voluptates. Voluptates aut animi repellendus labore nam sapiente accusamus esse distinctio recusandae quo?
+                    Minima sapiente voluptas amet blanditiis delectus nulla animi harum possimus, perspiciatis quo molestiae fugit deleniti eos optio </p>
+                    <img src="https://t4.ftcdn.net/jpg/02/24/86/95/360_F_224869519_aRaeLneqALfPNBzg0xxMZXghtvBXkfIA.jpg" alt="image5" width="20%" height="20%" style="border-radius: 40%; margin-top:18px ;">
+                    <span>Mark Brown</span>
+                    </div>
+                    <div class="review">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae sit iure eius architecto cum a accusantium at voluptates. Voluptates aut animi repellendus labore nam sapiente accusamus esse distinctio recusandae quo?
+                        Minima sapiente voluptas amet blanditiis delectus nulla animi harum possimus, perspiciatis quo molestiae fugit deleniti eos optio </p>
+                        <img src="https://t4.ftcdn.net/jpg/02/24/86/95/360_F_224869519_aRaeLneqALfPNBzg0xxMZXghtvBXkfIA.jpg" alt="image5" width="20%" height="20%" style="border-radius: 40%; margin-top:18px ;">
+                        <span>Mark Brown</span>
+                    </div>
+            </div>
+        </div>
+        <div class="fifth" id="contact">
+            <h2>Contact Us</h2>
+            <div class="forms">
+        <form name="contactform" onsubmit="return submitTask()">
+            <div class="input-container">
+                <label for="name">Name:</label>
+                <br>
+                <input type="text" id="fullname">
+            </div>
+            <div class="input-container">
+                <label for="email">Email:</label>
+                <br>
+                <input type="email" id="emaail">
+            </div>
+            <div class="input-container">
+                <label for="number">Phonenumber:</label>
+                <br>
+                <input type="number" id="number">
+            </div>
+            
+            <p>Write a message:</p>
+            
+
+            <textarea name="mssg" id="area"></textarea>
+            <input type="submit" style="background-color:rgb(38, 38, 165); color:white ; border: none; border-radius: 3px; margin-top: 20px;">
+        </form>
+        <img src="https://assets-global.website-files.com/5ef0df6b9272f7410180a013/5ef204bb10b93fdbe5e601bb_contact-2860030_1920-1024x683.jpg" alt="image6" width="50%" style="margin-top: 5px;" height="99%">
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <div class="info">
+            <h4>
+                Company
+                <hr>
+            </h4>
+            <ul class="lists2">
+                <a href="knowmore.html"><li>About Us</li></a>
+               <a href="moreservices.html"> <li>Our Services </li></a>
+               <a href="https://www.google.com/search?q=privacy+policy&rlz=1C1KNTJ_enNP1060NP1060&oq=privacy&gs_lcrp=EgZjaHJvbWUqBwgDEAAYgAQyDAgAEEUYORixAxiABDIHCAEQABiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCDQ5ODZqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8"> <li>Priacy Policy</li></a>
+            
+            </ul>
+        </div>
+        <div class="info">
+            <h4>
+                Get Help
+                <hr>
+            </h4>
+            <ul class="lists2">
+               <a href="https://www.google.com/search?q=faq&sca_esv=0d4a60feda95d33d&rlz=1C1KNTJ_enNP1060NP1060&sxsrf=ADLYWIIvOop7ZT2tMv6ZSP1BVAnWM-Szng%3A1724586265536&ei=GRnLZuu5II6Nvr0Pj8OByA4&ved=0ahUKEwirqve9iJCIAxWOhq8BHY9hAOkQ4dUDCA8&uact=5&oq=faq&gs_lp=Egxnd3Mtd2l6LXNlcnAiA2ZhcTIKEAAYgAQYQxiKBTIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgcQABiABBgKMgUQABiABDIFEAAYgAQyCxAuGIAEGMcBGK8BSJsVULECWKsQcAJ4AZABBJgB0wGgAZ8LqgEFMC43LjG4AQPIAQD4AQGYAgagAt8GqAIUwgIKEAAYsAMY1gQYR8ICDRAAGIAEGLADGEMYigXCAgoQIxiABBgnGIoFwgIHECMYJxjqAsICExAAGIAEGEMYtAIYigUY6gLYAQHCAhYQLhiABBixAxjRAxhDGIMBGMcBGIoFwgIQEC4YgAQY0QMYQxjHARiKBcICCxAAGIAEGLEDGIMBwgIREC4YgAQYsQMY0QMYgwEYxwHCAgsQLhiABBixAxiDAcICDhAAGIAEGLEDGIMBGIoFwgIQEAAYgAQYsQMYQxiDARiKBZgDNIgGAZAGCroGBggBEAEYAZIHBTIuMy4xoAfsSA&sclient=gws-wiz-serp"> <li>FAQ</li></a>
+                <a href="https://www.google.com/search?q=help&sca_esv=0d4a60feda95d33d&rlz=1C1KNTJ_enNP1060NP1060&sxsrf=ADLYWILRZ6ZdM7IZJzwaHOoQ42rB-e52xA%3A1724586421925&ei=tRnLZqiZON6enesP_cj7IA&ved=0ahUKEwjox8CIiZCIAxVeT2cHHX3kHgQQ4dUDCA8&uact=5&oq=help&gs_lp=Egxnd3Mtd2l6LXNlcnAiBGhlbHAyCxAAGIAEGJECGIoFMgUQABiABDILEAAYgAQYsQMYgwEyCBAAGIAEGLEDMgUQABiABDIIEAAYgAQYsQMyCxAuGIAEGMcBGK8BMgsQABiABBixAxiDATIFEAAYgAQyBRAAGIAESM0TUOADWNUQcAJ4AZABAZgBvgGgAZYIqgEDMC42uAEDyAEA-AEBmAIGoALqBqgCEMICChAAGLADGNYEGEfCAg0QABiABBiwAxhDGIoFwgIOEAAYsAMY5AIY1gTYAQHCAhkQLhiABBiwAxjRAxhDGMcBGMgDGIoF2AECwgITEC4YgAQYsAMYQxjIAxiKBdgBAsICBxAjGCcY6gLCAhwQLhiABBjRAxhDGLQCGMcBGMgDGIoFGOoC2AECwgIWEC4YgAQYQxi0AhjIAxiKBRjqAtgBAsICGhAuGIAEGOMEGNQCGLQCGMgDGOkEGOoC2AECwgIKECMYgAQYJxiKBcICBBAjGCfCAgUQLhiABMICCxAuGIAEGLEDGIMBwgIIEC4YgAQYsQPCAhEQLhiABBixAxjHARiKBRivAcICCxAuGIAEGLEDGIoFwgIMEAAYgAQYQxiKBRgKwgILEC4YgAQYsQMY1AKYAyeIBgGQBhO6BgYIARABGAm6BgYIAhABGAiSBwUyLjIuMqAHt0o&sclient=gws-wiz-serp"><li>Help </li></a>
+                <a href="https://www.google.com/search?q=help&sca_esv=0d4a60feda95d33d&rlz=1C1KNTJ_enNP1060NP1060&sxsrf=ADLYWILRZ6ZdM7IZJzwaHOoQ42rB-e52xA%3A1724586421925&ei=tRnLZqiZON6enesP_cj7IA&ved=0ahUKEwjox8CIiZCIAxVeT2cHHX3kHgQQ4dUDCA8&uact=5&oq=help&gs_lp=Egxnd3Mtd2l6LXNlcnAiBGhlbHAyCxAAGIAEGJECGIoFMgUQABiABDILEAAYgAQYsQMYgwEyCBAAGIAEGLEDMgUQABiABDIIEAAYgAQYsQMyCxAuGIAEGMcBGK8BMgsQABiABBixAxiDATIFEAAYgAQyBRAAGIAESM0TUOADWNUQcAJ4AZABAZgBvgGgAZYIqgEDMC42uAEDyAEA-AEBmAIGoALqBqgCEMICChAAGLADGNYEGEfCAg0QABiABBiwAxhDGIoFwgIOEAAYsAMY5AIY1gTYAQHCAhkQLhiABBiwAxjRAxhDGMcBGMgDGIoF2AECwgITEC4YgAQYsAMYQxjIAxiKBdgBAsICBxAjGCcY6gLCAhwQLhiABBjRAxhDGLQCGMcBGMgDGIoFGOoC2AECwgIWEC4YgAQYQxi0AhjIAxiKBRjqAtgBAsICGhAuGIAEGOMEGNQCGLQCGMgDGOkEGOoC2AECwgIKECMYgAQYJxiKBcICBBAjGCfCAgUQLhiABMICCxAuGIAEGLEDGIMBwgIIEC4YgAQYsQPCAhEQLhiABBixAxjHARiKBRivAcICCxAuGIAEGLEDGIoFwgIMEAAYgAQYQxiKBRgKwgILEC4YgAQYsQMY1AKYAyeIBgGQBhO6BgYIARABGAm6BgYIAhABGAiSBwUyLjIuMqAHt0o&sclient=gws-wiz-serp"><li>Order Status</li></a>
+                
+        </div>
+        <div class="info">
+            <h4>
+                Services
+                <hr>
+            </h4>
+            <ul class="lists2">
+                <a href="moreservices.html"><li>Smartphones</li></a>
+                <a href="moreservices.html"><li>Watches</li></a>
+               <a href="moreservices.html"> <li>Tv</li></a>
+                
+            </ul>
+        </div>
+    </footer>
+    <script>
+
+        function submitTask(){
+            const name= document.querySelector('#fullname').value;
+            const email=document.querySelector('#emaail').value;
+            const number=document.querySelector('#number').value;
+            const description=document.querySelector('#area').value;
+            
+            
+            if (!name){
+                alert('fill the name')
+                event.preventDefault();
+            }
+            
+        
+    
+            
+            if (!email){
+                alert('fill the email')
+                event.preventDefault();
+            }
+
+        
+
+          
+            if (!number){
+                alert(' add the number')
+                event.preventDefault();
+            }
+        
+    
+            
+            if (!description){
+                alert('add the message')
+                event.preventDefault();
+            }
+
+        
+    
+    }
+
+
+    </script>
+</body>
+</html>
